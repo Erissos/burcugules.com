@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burcu Güleş - Tanıtım</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+        .giris-bg {
+            background-image: url('./assets/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        body {
+            font-family: 'Young Serif', serif;
+            background: #fff;
+        }
+        /* 3D başlık efekti */
+        .three-d {
+            text-shadow:
+                2px 2px 0 #fff,
+                4px 4px 0 #f9a8d4,
+                6px 6px 10px #0003;
+        }
+        /* Parlama efekti */
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.2) 100%);
+            transform: rotate(25deg);
+            pointer-events: none;
+            animation: shine 3s infinite linear;
+        }
+        @keyframes shine {
+            0% { left: -60%; }
+            100% { left: 120%; }
+        }
+    </style>
+</head>
+<body class="text-black bg-white font-[Young_Serif]">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-30 shadow-lg bg-black/90 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+            <h1 class="text-3xl font-bold tracking-wide text-white uppercase">Burcu Güleş</h1>
+            <nav class="flex space-x-4">
+                <a href="#hakkimizda" class="text-white hover:text-pink-400 transition">Hakkımızda</a>
+                <a href="#hizmetler" class="text-white hover:text-pink-400 transition">Hizmetler</a>
+                <a href="#iletisim" class="text-white hover:text-pink-400 transition">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- GİRİŞ -->
+    <section id="giris" class="giris-bg min-h-screen flex flex-col justify-center items-center text-center relative pt-32 pb-16">
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-100/80 via-white/60 to-pink-200/80 backdrop-blur-[2px]"></div>
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+            <h2 class="three-d shine text-4xl md:text-5xl font-extrabold mb-6 text-black drop-shadow-2xl">Zarafeti ustalıkla buluşturan kalıplarla tasarımlarınızı bir üst seviyeye taşıyın.</h2>
+            <p class="text-xl md:text-2xl text-black mb-6 font-medium drop-shadow-lg">İlham verici kıyafet şablonları ve tekstil çözümleriyle yaratıcılığınızı gerçeğe dönüştürün. Moda burada, doğru kalıpla başlar.</p>
+            <span class="block text-pink-700 font-bold text-2xl italic mt-4 drop-shadow-lg">Kumaşa hayat, kalıba ruh veriyoruz</span>
+        </div>
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-pink-400 drop-shadow-xl" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- HAKKIMIZDA -->
+    <section id="hakkimizda" class="w-full py-20 px-4 bg-white border-t-4 border-pink-200 transition-all duration-700">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold uppercase tracking-wider text-pink-700 mb-6 border-b-2 border-pink-300 pb-2">Hakkımızda</h2>
+            <p class="text-lg text-gray-800 mb-4">
+                Her projemde; doğru ölçü, titiz işçilik ve modaya uygun tasarım ilkelerini bir araya getirerek, hayalinizdeki kıyafetin gerçeğe dönüşmesini sağlıyorum. İster kişiye özel tasarım, ister hazır giyim koleksiyonları için kalıp hazırlığı olsun, her aşamada kaliteli ve profesyonel bir hizmet sunuyorum.
+            </p>
+            <p class="text-lg text-gray-800 mb-4">
+                Siz de markanıza değer katacak, kusursuz oturan ve estetik açıdan güçlü tasarımlara sahip kalıplar arıyorsanız doğru yerdesiniz!
+            </p>
+            <p class="text-lg text-black font-semibold">
+                Hayalinizdeki tasarımları gerçeğe dönüştürmek için buradayım. Siz hayal edin, biz tasarlayalım!
+            </p>
+        </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section id="hizmetler" class="w-full py-20 px-4 bg-pink-50 border-t-4 border-pink-200 transition-all duration-700">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold uppercase tracking-wider text-pink-700 mb-10 border-b-2 border-pink-300 pb-2">Hizmetler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="group transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:bg-white/80 bg-white/60 rounded-lg p-6 border border-pink-200 shadow-lg">
+                    <h3 class="text-lg font-bold mb-2 text-black border-b-2 border-pink-300 pb-1 group-hover:text-pink-600 transition">Kadın Giyim Kalıp Tasarımı</h3>
+                    <p class="text-gray-800">
+                        Vücuda oturan, estetik ve konforlu kadın giyim modelleri için profesyonel kalıp tasarımı hizmeti sunuyoruz. Özgün tasarımlarınızı üretime hazır hale getiriyor, dijital kalıplarla koleksiyonlarınıza sağlam bir temel sağlıyoruz.
+                    </p>
+                </div>
+                <div class="group transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:bg-white/80 bg-white/60 rounded-lg p-6 border border-pink-200 shadow-lg">
+                    <h3 class="text-lg font-bold mb-2 text-black border-b-2 border-pink-300 pb-1 group-hover:text-pink-600 transition">Koleksiyon Bazlı Kalıp Geliştirme</h3>
+                    <p class="text-gray-800">
+                        Farklı parçaların birbiriyle uyumlu olduğu, bütünsel koleksiyonlar için profesyonel kalıp geliştirme hizmeti sunuyoruz. Tasarım dilinize uygun, üretime hazır kalıplarla koleksiyonlarınızı güçlendiriyoruz.
+                    </p>
+                </div>
+                <div class="group transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:bg-white/80 bg-white/60 rounded-lg p-6 border border-pink-200 shadow-lg">
+                    <h3 class="text-lg font-bold mb-2 text-black border-b-2 border-pink-300 pb-1 group-hover:text-pink-600 transition">Teknik Çizim ve Ölçü Tablosu</h3>
+                    <p class="text-gray-800">
+                        Ürünlerinizi üretime en doğru şekilde aktarmak için detaylı teknik çizimler ve ölçü tabloları hazırlıyoruz. Her model için dikiş, detay ve ölçü bilgilerini içeren profesyonel dokümanlarla, koleksiyon sürecinizi destekliyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="w-full py-20 px-4 bg-white border-t-4 border-pink-200 transition-all duration-700">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold uppercase tracking-wider text-pink-700 mb-6 border-b-2 border-pink-300 pb-2">İletişim</h2>
+            <ul class="text-lg space-y-4">
+                <li><span class="font-bold text-black">Telefon:</span> +90 (530) 477 87 05</li>
+                <li><span class="font-bold text-black">Instagram:</span> @ayse_kalip_ofisi</li>
+                <li><span class="font-bold text-black">Adres:</span> Meşrutiyet Mahallesi, Kodaman Sokak, No: 15, Kat: 2, Daire: 3, Şişli / İstanbul</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white p-4 text-center">
+        <p>&copy; 2025 Burcu Güleş</p>
+    </footer>
+</body>
+</html>
